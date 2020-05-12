@@ -1,3 +1,10 @@
+@import "reset";
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 @font-face {
   font-family: "Elaine";
   font-style: normal;
@@ -100,6 +107,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         label {
           color: #94aebf;
           font-family: "Azo-Sans-Bold";
@@ -107,7 +115,7 @@
           text-transform: uppercase;
           width: 260px;
           height: 40px;
-          text-align: center;
+          text-align: center !important;
           padding: 0 10px 10px 10px;
         }
 
@@ -161,6 +169,8 @@
 
 @media only screen and (min-device-width: 768px) {
   #SignUp {
+    width: 100%;
+    height: 100vh;
     .signup-container {
       width: 543.5px;
 
@@ -178,6 +188,15 @@
             width: 374px !important;
             margin-right: 20.5px;
             font-size: 24px;
+          }
+          .first-name,
+          .last-name {
+            width: 187px !important;
+          }
+
+          .first-name,
+          .last-name {
+            width: 135px;
           }
           .submit-btn {
             width: 149px !important;
@@ -197,8 +216,10 @@
 
 @media only screen and (min-device-width: 1024px) {
   #SignUp {
+    width: 100%;
+    height: 100vh;
     .signup-container {
-      width: 1027px;
+      width: 800px;
       flex-direction: row;
       h2 {
         font-size: 60px;
@@ -210,7 +231,7 @@
         // width: 386px !Important;
         align-items: normal !important;
         label {
-          text-align: left !important;
+          // text-align: left !important;
           width: 100% !important;
           font-size: 20px !important;
         }
@@ -220,6 +241,11 @@
             width: 374px !important;
             margin-right: 20.5px;
             font-size: 24px;
+          }
+
+          .first-name,
+          .last-name {
+            width: 187px !important;
           }
           .submit-btn {
             width: 149px !important;
@@ -238,6 +264,8 @@
 
 @media screen and (min-device-width: 1200px) {
   #SignUp {
+    width: 100%;
+    height: 100vh;
     .signup-container {
       width: 1442px;
       flex-direction: row;
@@ -251,7 +279,7 @@
         // width: 386px !Important;
         align-items: normal !important;
         label {
-          text-align: left !important;
+          // text-align: left !important;
           width: 100% !important;
           font-size: 24px !important;
         }
@@ -261,6 +289,11 @@
             width: 374px !important;
             margin-right: 20.5px;
             font-size: 24px;
+          }
+
+          .first-name,
+          .last-name {
+            width: 187px !important;
           }
           .submit-btn {
             width: 149px !important;
